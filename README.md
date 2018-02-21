@@ -3,7 +3,8 @@
 Welcome to The Program that helps you easily configure your Kali Linux !!
 
 All you have to do to get the App is:
-  #git clone https://github.com/BlackHatZeus/KaliSetup.git 
+
+  git clone https://github.com/BlackHatZeus/KaliSetup.git 
 
 And you will get further instructions inside the App..
 
