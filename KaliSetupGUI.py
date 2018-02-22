@@ -26,8 +26,9 @@ def setup_kali():
 
 def tor():
     subprocess.call('cd /', shell=True)
+    subprocess.call('wget https://www.torproject.org/dist/torbrowser/7.5/tor-browser-linux64-7.5_en-US.tar.xz', shell=True)
     subprocess.call('tar -xvf KaliSetup/tor-browser-linux64-7.5_en-US.tar.xz', shell=True)
-    subprocess.call('mv start-tor-browser tor-browser_en-US/Browser', shell=True)
+    subprocess.call('cp KaliSetup/start-tor-browser tor-browser_en-US/Browser', shell=True)
     subprocess.call('./tor-browser_en-US/Browser/start-tor-browser', shell=True)
 
 
