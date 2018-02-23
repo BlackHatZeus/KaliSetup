@@ -49,6 +49,7 @@ def fsociety():
     subprocess.call('cd /', shell=True)
     subprocess.call('git clone https://github.com/Manisso/fsociety.git', shell=True)
     subprocess.call('chmod +x fsociety/install.sh && ./fsociety/install.sh', shell=True)
+    subprocess.call('fsociety', shell=True)
     
 
 '#Support Function'
