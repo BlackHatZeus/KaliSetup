@@ -39,7 +39,6 @@ def fat_rat():
     subprocess.call('cd /', shell=True)
     subprocess.call('git clone https://github.com/Screetsec/TheFatRat.git', shell=True)
     subprocess.call('chmod +x TheFatRat/setup.sh', shell=True)
-    subprocess.call('./TheFatRat/setup.sh', shell=True)
 
 
 '#fSociety Installation'
@@ -81,7 +80,7 @@ tor_button.pack(side=TOP, fill=X, padx=50, pady=0)
 fat_rat_button = Button(text="TheFatRat", bg="Black", fg="#40FF00", command=fat_rat)
 fat_rat_button.pack(side=TOP, fill=X, padx=50, pady=20)
 
-fsociety_button = Button(text="fSociety", bg="Black", fg="#40FF00", command=fat_rat)
+fsociety_button = Button(text="fSociety", bg="Black", fg="#40FF00", command=fsociety)
 fsociety_button.pack(side=TOP, fill=X, padx=50, pady=0)
 
 exit_button = Button(text="Exit", bg="Black", fg="#40FF00", command=exit_)
