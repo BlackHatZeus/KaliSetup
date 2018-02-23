@@ -42,6 +42,15 @@ def fat_rat():
     subprocess.call('./TheFatRat/setup.sh', shell=True)
 
 
+'#fSociety Installation'
+
+
+def fsociety():
+    subprocess.call('cd /', shell=True)
+    subprocess.call('git clone https://github.com/Manisso/fsociety.git', shell=True)
+    subprocess.call('chmod +x fsociety/install.sh && ./fsociety/install.sh', shell=True)
+    
+
 '#Support Function'
 
 
@@ -71,6 +80,9 @@ tor_button.pack(side=TOP, fill=X, padx=50, pady=0)
 fat_rat_button = Button(text="TheFatRat", bg="Black", fg="#40FF00", command=fat_rat)
 fat_rat_button.pack(side=TOP, fill=X, padx=50, pady=20)
 
+fsociety_button = Button(text="fSociety", bg="Black", fg="#40FF00", command=fat_rat)
+fsociety_button.pack(side=TOP, fill=X, padx=50, pady=0)
+
 exit_button = Button(text="Exit", bg="Black", fg="#40FF00", command=exit_)
 exit_button.pack(side=BOTTOM, fill=X, padx=50, pady=0)
 
@@ -81,3 +93,4 @@ exit_button.pack(side=BOTTOM, fill=X, padx=50, pady=10)
 '#End of Program'
 
 mainloop()
+
